@@ -1,6 +1,6 @@
-baseURL = 'https://thenightshadenotebook.com'
-title = 'The Night Shade Notebook'
-defaultContentLanguage = "en"
+baseURL = "https://thenightshadenotebook.com/"
+languageCode = "en-us"
+title = "The Nightshade Notebook"
 enableRobotsTXT = true
 summaryLength = 0
 
