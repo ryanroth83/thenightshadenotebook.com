@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/ja/docs/homepage-layout/" />
+  <link rel="canonical" href="//localhost:1313/ja/docs/homepage-layout/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/ja/docs/homepage-layout/">
+  <meta property="og:url" content="//localhost:1313/ja/docs/homepage-layout/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="ホームページレイアウト">
   <meta property="og:description" content="Congoにおけるホームページレイアウトの設定について">
@@ -125,7 +125,7 @@
     "description": "Congoにおけるホームページレイアウトの設定について",
     "abstract": "Congoは、組み込みテンプレートと独自のテンプレートを提供する機能によって、柔軟なホームページレイアウトを提供します。",
     "inLanguage": "ja",
-    "url" : "http:\/\/localhost:1313\/ja\/docs\/homepage-layout\/",
+    "url" : "\/\/localhost:1313\/ja\/docs\/homepage-layout\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -150,13 +150,13 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/",
+       "item": "//localhost:1313/ja/",
        "name": "Congoへようこそ! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/docs/",
+       "item": "//localhost:1313/ja/docs/",
        "name": "ドキュメント",
        "position": 2
      },
@@ -708,14 +708,14 @@
 
 </figure>
 </p>
-<p>著者情報は <code>languages</code> 設定ファイルで提供されます。パラメーターの詳細については、<a href="http://localhost:1313/ja/docs/getting-started/">はじめに</a>と<a href="http://localhost:1313/ja/docs/configuration/#言語と国際化">言語と国際化</a>セクションを参照してください。</p>
+<p>著者情報は <code>languages</code> 設定ファイルで提供されます。パラメーターの詳細については、<a href="//localhost:1313/ja/docs/getting-started/">はじめに</a>と<a href="//localhost:1313/ja/docs/configuration/#言語と国際化">言語と国際化</a>セクションを参照してください。</p>
 <p>さらに、ホームページのコンテンツで提供されるすべてのMarkdownコンテンツは、著者プロフィールの下に配置されます。これにより、ショートコードを使用した著者の略歴やその他のカスタムコンテンツを表示するための柔軟性が増します。</p>
 <p>プロフィールレイアウトを有効にするには、 <code>params.toml</code> 設定ファイルで <code>homepage.layout = &quot;profile&quot;</code> を設定します。</p>
 <h2 id="カスタムレイアウト" class="relative group">カスタムレイアウト <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e3%82%ab%e3%82%b9%e3%82%bf%e3%83%a0%e3%83%ac%e3%82%a4%e3%82%a2%e3%82%a6%e3%83%88" aria-label="アンカー">#</a></span></h2><p>組み込みのホームページレイアウトがあなたのニーズに十分でない場合は、独自のカスタムレイアウトを提供するオプションがあります。これにより、ページの内容を完全にコントロールすることができ、白紙の状態から作成することができます。</p>
 <p>カスタムレイアウトを有効にするには、 <code>params.toml</code> 設定ファイルで <code>homepage.layout = &quot;custom&quot;</code> を設定します。</p>
 <p>設定値が設定された状態で、新しい <code>custom.html</code> ファイルを作成し、 <code>layouts/partials/home/custom.html</code> に配置してください。これで、 <code>custom.html</code> ファイルにあるものは何でも、サイトのホームページのコンテンツエリアに配置されるようになります。レイアウトの定義には、HTML、Tailwind、Hugoのテンプレート関数など、お好きなものをお使いください。</p>
 <p>カスタムレイアウトに<a href="#%e6%9c%80%e8%bf%91%e3%81%ae%e8%a8%98%e4%ba%8b">最近の記事</a>を含めるには、 <code>recent-articles.html</code> パーシャルを使います。</p>
-<p>例として、このサイトの<a href="http://localhost:1313/ja/">ホームページ</a>では、カスタムレイアウトを使ってページとプロフィールのレイアウトを切り替えられるようにしています。<a href="https://github.com/jpanther/congo/blob/dev/exampleSite/layouts/partials/home/custom.html" target="_blank" rel="noreferrer">GitHub repo</a>を訪問して、どのように動作するか見てみましょう。</p>
+<p>例として、このサイトの<a href="//localhost:1313/ja/">ホームページ</a>では、カスタムレイアウトを使ってページとプロフィールのレイアウトを切り替えられるようにしています。<a href="https://github.com/jpanther/congo/blob/dev/exampleSite/layouts/partials/home/custom.html" target="_blank" rel="noreferrer">GitHub repo</a>を訪問して、どのように動作するか見てみましょう。</p>
 <h2 id="最近の記事" class="relative group">最近の記事 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%9c%80%e8%bf%91%e3%81%ae%e8%a8%98%e4%ba%8b" aria-label="アンカー">#</a></span></h2><p>すべてのホームページレイアウトには、メインページコンテンツの下に最近の記事を表示するオプションがあります。これを有効にするには、 <code>params.toml</code> 設定ファイルの <code>homepage.showRecent</code> 設定を <code>true</code> にするだけです。</p>
 <p>
 
@@ -921,7 +921,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/ja/"
+  data-url="//localhost:1313/ja/"
 >
   <div
     id="search-modal"

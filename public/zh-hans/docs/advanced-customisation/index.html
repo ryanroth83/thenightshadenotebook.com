@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/zh-hans/docs/advanced-customisation/" />
+  <link rel="canonical" href="//localhost:1313/zh-hans/docs/advanced-customisation/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/zh-hans/docs/advanced-customisation/">
+  <meta property="og:url" content="//localhost:1313/zh-hans/docs/advanced-customisation/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="高级定制">
   <meta property="og:description" content="学习如何手动构建 Congo。">
@@ -125,7 +125,7 @@
     "description": "学习如何手动构建 Congo。",
     "abstract": "Congo 支持高级定制，包括修改底层的 Tailwind 配置，手动构建主题以及提供自定义 CSS。",
     "inLanguage": "zh-Hans",
-    "url" : "http:\/\/localhost:1313\/zh-hans\/docs\/advanced-customisation\/",
+    "url" : "\/\/localhost:1313\/zh-hans\/docs\/advanced-customisation\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -150,13 +150,13 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/zh-hans/",
+       "item": "//localhost:1313/zh-hans/",
        "name": "欢迎使用 Congo! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/zh-hans/docs/",
+       "item": "//localhost:1313/zh-hans/docs/",
        "name": "文档",
        "position": 2
      },
@@ -603,7 +603,7 @@
 <p>调整任何主题行为的正确方式是使用 Hugo 强大的<a href="https://gohugo.io/templates/lookup-order/" target="_blank" rel="noreferrer">文件查找顺序</a>。总体而言，查找顺序确保您在项目目录中包含的任何文件将自动优先于任何主题文件。</p>
 <p>例如，如果您想要覆盖 Congo 中的主文章模板，您只需创建自己的 <code>layouts/_default/single.html</code> 文件并将其放置在项目的根目录。该文件将覆盖主题中的 <code>single.html</code>，而无需更改主题本身。这适用于任何主题文件 - HTML 模板、局部、短代码、配置文件、数据、资产等。</p>
 <p>只要遵循这个简单的做法，您就始终能够更新主题（或测试不同的主题版本），而不必担心会丢失任何自定义更改。</p>
-<h2 id="颜色方案" class="relative group">颜色方案 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e9%a2%9c%e8%89%b2%e6%96%b9%e6%a1%88" aria-label="锚点">#</a></span></h2><p>Congo 默认提供了许多颜色方案。要更改基本的颜色方案，您可以设置 <code>colorScheme</code> 主题参数。请参阅 <a href="http://localhost:1313/zh-hans/docs/getting-started/#colour-schemes">入门指南</a> 部分，了解内置方案的更多信息。</p>
+<h2 id="颜色方案" class="relative group">颜色方案 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e9%a2%9c%e8%89%b2%e6%96%b9%e6%a1%88" aria-label="锚点">#</a></span></h2><p>Congo 默认提供了许多颜色方案。要更改基本的颜色方案，您可以设置 <code>colorScheme</code> 主题参数。请参阅 <a href="//localhost:1313/zh-hans/docs/getting-started/#colour-schemes">入门指南</a> 部分，了解内置方案的更多信息。</p>
 <p>除了默认方案之外，您还可以创建自己的方案，并根据自己的喜好重新设计整个网站。通过在 <code>assets/css/schemes/</code> 文件夹中放置 <code>&lt;scheme-name&gt;.css</code> 文件来创建方案。创建文件后，只需在主题配置中按名称引用即可。</p>
 <p>Congo 定义了一个贯穿整个主题使用的三种颜色的调色板。这三种颜色分别被定义为 <code>neutral</code>、<code>primary</code> 和 <code>secondary</code> 变体，每种颜色包含十个色调。</p>
 <p>由于 Tailwind CSS 3.0 使用不透明度计算颜色值的方式，方案中指定的颜色需要<a href="https://github.com/adamwathan/tailwind-css-variable-text-opacity-demo" target="_blank" rel="noreferrer">符合特定格式</a>，即提供红色、绿色和蓝色颜色值。</p>
@@ -644,7 +644,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="c1">// and more...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
-</span></span></code></pre></div><p>这个默认配置已经包含了这些内容路径，以便您可以轻松生成自己的 CSS 文件，而无需修改它，只要您遵循特定的项目结构。换句话说，<strong>您必须将 Congo 作为子目录包含在项目中，即 <code>themes/congo/</code></strong>。这意味着您不能轻松使用 Hugo 模块来安装主题，而必须选择 git 子模块（推荐）或手动安装路线。<a href="http://localhost:1313/zh-hans/docs/installation/">安装文档</a>解释了如何使用这两种方法之一安装主题。</p>
+</span></span></code></pre></div><p>这个默认配置已经包含了这些内容路径，以便您可以轻松生成自己的 CSS 文件，而无需修改它，只要您遵循特定的项目结构。换句话说，<strong>您必须将 Congo 作为子目录包含在项目中，即 <code>themes/congo/</code></strong>。这意味着您不能轻松使用 Hugo 模块来安装主题，而必须选择 git 子模块（推荐）或手动安装路线。<a href="//localhost:1313/zh-hans/docs/installation/">安装文档</a>解释了如何使用这两种方法之一安装主题。</p>
 <h3 id="项目结构" class="relative group">项目结构 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e9%a1%b9%e7%9b%ae%e7%bb%93%e6%9e%84" aria-label="锚点">#</a></span></h3><p>为了充分利用默认配置，您的项目结构应该长得像下面这个样子&hellip;</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
 </span></span><span class="line"><span class="cl">├── assets
@@ -833,7 +833,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/zh-hans/"
+  data-url="//localhost:1313/zh-hans/"
 >
   <div
     id="search-modal"

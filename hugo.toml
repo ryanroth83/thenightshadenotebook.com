@@ -1,4 +1,4 @@
-baseURL = "https://thenightshadenotebook.com/"
+baseURL = "thenightshadenotebook.com/"
 languageCode = "en-us"
 title = "The Nightshade Notebook"
 enableRobotsTXT = true

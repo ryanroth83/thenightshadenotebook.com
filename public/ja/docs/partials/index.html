@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/ja/docs/partials/" />
+  <link rel="canonical" href="//localhost:1313/ja/docs/partials/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/ja/docs/partials/">
+  <meta property="og:url" content="//localhost:1313/ja/docs/partials/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="パーシャル">
   <meta property="og:description" content="Congoで利用できるすべてのパーシャルについて">
@@ -128,7 +128,7 @@
     "description": "Congoで利用できるすべてのパーシャルについて",
     "abstract": "パーシャルは、アナリティクス、コメント、ファビコン、カスタムスクリプトなどの特別な機能をテーマに追加するために使用されます。",
     "inLanguage": "ja",
-    "url" : "http:\/\/localhost:1313\/ja\/docs\/partials\/",
+    "url" : "\/\/localhost:1313\/ja\/docs\/partials\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -153,13 +153,13 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/",
+       "item": "//localhost:1313/ja/",
        "name": "Congoへようこそ! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/docs/",
+       "item": "//localhost:1313/ja/docs/",
        "name": "ドキュメント",
        "position": 2
      },
@@ -608,7 +608,7 @@
 </span></span></code></pre></div><h3 id="custom-analytics-providers" class="relative group">Custom analytics providers <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#custom-analytics-providers" aria-label="アンカー">#</a></span></h3><p>別のアナリティクスプロバイダーを使いたい場合は、アナリティクスパーシャルをオーバーライドして独自のスクリプトを提供することもできます。 <code>layouts/partials/analytics.html</code> ファイルをプロジェクトに作成するだけで、ウェブサイトの <code>&lt;head&gt;</code> に自動的にインクルードされます。</p>
 <h2 id="コメント" class="relative group">コメント <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e3%82%b3%e3%83%a1%e3%83%b3%e3%83%88" aria-label="アンカー">#</a></span></h2><p>記事にコメント機能を追加するために、Congoは各記事ページのベースに含まれるコメントパーシャルのサポートを含んでいます。 <code>layouts/partials/comments.html</code> を提供するだけで、選択したコメントを表示するために必要なコードが含まれます。</p>
 <p>組み込みのHugo Disqusテンプレートを使用するか、独自のカスタムコードを提供することができます。詳しくは<a href="https://gohugo.io/content-management/comments/" target="_blank" rel="noreferrer">Hugo docs</a>を参照してください。</p>
-<p>コメントを表示する場所をより細かく制御するために <code>showComments</code> パラメーターを使用します。この値は <code>params.toml</code> の<a href="http://localhost:1313/ja/docs/configuration/#テーマパラメーター">テーマパラメーター</a>として設定するか、<a href="http://localhost:1313/ja/docs/front-matter/">フロントマター</a>に含めることで記事ごとに設定するか、選ぶことができます。このパラメーターはデフォルトで <code>false</code> に設定されているので、コメントを表示させるにはこれらの場所のいずれかで <code>true</code> に設定する必要があります。</p>
+<p>コメントを表示する場所をより細かく制御するために <code>showComments</code> パラメーターを使用します。この値は <code>params.toml</code> の<a href="//localhost:1313/ja/docs/configuration/#テーマパラメーター">テーマパラメーター</a>として設定するか、<a href="//localhost:1313/ja/docs/front-matter/">フロントマター</a>に含めることで記事ごとに設定するか、選ぶことができます。このパラメーターはデフォルトで <code>false</code> に設定されているので、コメントを表示させるにはこれらの場所のいずれかで <code>true</code> に設定する必要があります。</p>
 <h2 id="ファビコン" class="relative group">ファビコン <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e3%83%95%e3%82%a1%e3%83%93%e3%82%b3%e3%83%b3" aria-label="アンカー">#</a></span></h2><p>Congoはデフォルトで空白のファビコンセットを提供しますが、それを上書きするために独自のアセットを設定することができます。新しいファビコンを入手する最も簡単な方法は、<a href="https://favicon.io" target="_blank" rel="noreferrer">favicon.io</a>のようなサードパーティプロバイダーを使って生成することです。</p>
 <p>アイコンアセットは、ウェブサイトの <code>static/</code> に直接配置し、以下のリストに従って名前を付けてください。<a href="https://favicon.io" target="_blank" rel="noreferrer">favicon.io</a>を使用する場合、これらは自動的に生成されるファイル名になりますが、必要に応じて独自のアセットを提供することもできます。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">static/
@@ -620,13 +620,13 @@
 </span></span><span class="line"><span class="cl">├─ favicon.ico
 </span></span><span class="line"><span class="cl">└─ site.webmanifest
 </span></span></code></pre></div><p>また、デフォルトのファビコンの動作を完全にオーバーライドすることもできます。 <code>layouts/partials/favicons.html</code> ファイルをプロジェクトに提供するだけで、デフォルトのアセットの代わりに <code>&lt;head&gt;</code> に注入されます。</p>
-<h2 id="アイコン" class="relative group">アイコン <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e3%82%a2%e3%82%a4%e3%82%b3%e3%83%b3" aria-label="アンカー">#</a></span></h2><p><a href="http://localhost:1313/ja/docs/shortcodes/#アイコン">ショートコード - アイコン</a>と同様に、Congoの <code>icon.html</code> パーシャルを使うことで、独自のテンプレートやパーシャルにアイコンを含めることができます。このパーシャルにはアイコンの名前を指定します。</p>
+<h2 id="アイコン" class="relative group">アイコン <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e3%82%a2%e3%82%a4%e3%82%b3%e3%83%b3" aria-label="アンカー">#</a></span></h2><p><a href="//localhost:1313/ja/docs/shortcodes/#アイコン">ショートコード - アイコン</a>と同様に、Congoの <code>icon.html</code> パーシャルを使うことで、独自のテンプレートやパーシャルにアイコンを含めることができます。このパーシャルにはアイコンの名前を指定します。</p>
 <p><strong>例:</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl">  <span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;icon.html&#34;</span> <span class="s">&#34;github&#34;</span> <span class="p">}}</span>
-</span></span></code></pre></div><p>アイコンはHugo Pipesを使って配置されるため、非常に柔軟性があります。Congoには、ソーシャル、リンク、その他の目的のために多くのビルトインアイコンが含まれています。サポートされているアイコンの完全なリストは、<a href="http://localhost:1313/ja/samples/icons/">サンプル - アイコン</a> ページをチェックしてください。</p>
+</span></span></code></pre></div><p>アイコンはHugo Pipesを使って配置されるため、非常に柔軟性があります。Congoには、ソーシャル、リンク、その他の目的のために多くのビルトインアイコンが含まれています。サポートされているアイコンの完全なリストは、<a href="//localhost:1313/ja/samples/icons/">サンプル - アイコン</a> ページをチェックしてください。</p>
 <p>カスタムアイコンはプロジェクトの <code>assets/icons/</code> ディレクトリに独自のアイコンアセットを提供することで追加できます。アイコンは拡張子 <code>.svg</code> を除いたSVGファイル名でパーシャルから参照できます。</p>
 <h2 id="extensions" class="relative group">Extensions <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#extensions" aria-label="アンカー">#</a></span></h2><p>Congoは基本機能の拡張を可能にする多くのパーシャルを提供しています。</p>
-<h3 id="記事リンク" class="relative group">記事リンク <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%a8%98%e4%ba%8b%e3%83%aa%e3%83%b3%e3%82%af" aria-label="アンカー">#</a></span></h3><p>記事リンクの後に追加のコードを挿入したい場合は、 <code>layouts/partials/extend-article-link.html</code> ファイルを作成してください。これは、特定の記事のメタデータをハイライトするために使用できる<a href="http://localhost:1313/ja/docs/shortcodes/#バッジ"><code>バッジ</code></a>ショートコードと組み合わせると特に強力です。</p>
+<h3 id="記事リンク" class="relative group">記事リンク <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%a8%98%e4%ba%8b%e3%83%aa%e3%83%b3%e3%82%af" aria-label="アンカー">#</a></span></h3><p>記事リンクの後に追加のコードを挿入したい場合は、 <code>layouts/partials/extend-article-link.html</code> ファイルを作成してください。これは、特定の記事のメタデータをハイライトするために使用できる<a href="//localhost:1313/ja/docs/shortcodes/#バッジ"><code>バッジ</code></a>ショートコードと組み合わせると特に強力です。</p>
 <h3 id="headとfooter" class="relative group">HeadとFooter <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#head%e3%81%a8footer" aria-label="アンカー">#</a></span></h3><p>テンプレートの <code>&lt;head&gt;</code> と <code>&lt;footer&gt;</code> に直接追加コードを挿入することができます。これらはテーマの一部ではないスクリプトやその他のロジックを提供するのに便利です。</p>
 <p><code>layouts/partials/extend-head.html</code> または <code>layouts/partials/extend-footer.html</code> を作成するだけで、これらは自動的にあなたのウェブサイトに挿入されます。どちらのパーシャルも <code>&lt;head&gt;</code> と <code>&lt;footer&gt;</code> の最後の項目として挿入されるので、テーマのデフォルトを上書きするために使用することができます。</p>
 
@@ -768,7 +768,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/ja/"
+  data-url="//localhost:1313/ja/"
 >
   <div
     id="search-modal"

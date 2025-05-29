@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/docs/shortcodes/" />
+  <link rel="canonical" href="//localhost:1313/docs/shortcodes/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/docs/shortcodes/">
+  <meta property="og:url" content="//localhost:1313/docs/shortcodes/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="Shortcodes">
   <meta property="og:description" content="All the shortcodes available in Congo.">
@@ -127,7 +127,7 @@
     "description": "All the shortcodes available in Congo.",
     "abstract": "Congo includes several shortcodes for adding rich content to articles including images, charts, diagrams, buttons and more.",
     "inLanguage": "en-AU",
-    "url" : "http:\/\/localhost:1313\/docs\/shortcodes\/",
+    "url" : "\/\/localhost:1313\/docs\/shortcodes\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -152,13 +152,13 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/",
+       "item": "//localhost:1313/",
        "name": "Welcome to Congo! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/docs/",
+       "item": "//localhost:1313/docs/",
        "name": "Documentation",
        "position": 2
      },
@@ -853,10 +853,10 @@ Call to action
 </span></span></code></pre></div><!-- prettier-ignore-start -->
 <div class="chart">
   
-  <canvas id="496835127"></canvas>
+  <canvas id="281345679"></canvas>
   <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", (event) => {
-      const ctx = document.getElementById("496835127");
+      const ctx = document.getElementById("281345679");
       const chart = new Chart(ctx, {
         
 type: 'bar',
@@ -874,7 +874,7 @@ data: {
 </div>
 
 <!-- prettier-ignore-end -->
-<p>You can see some additional Chart.js examples on the <a href="http://localhost:1313/samples/charts/">charts samples</a> page.</p>
+<p>You can see some additional Chart.js examples on the <a href="//localhost:1313/samples/charts/">charts samples</a> page.</p>
 <h2 id="figure" class="relative group">Figure <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#figure" aria-label="Anchor">#</a></span></h2><p>Congo includes a <code>figure</code> shortcode for adding images to content. The shortcode replaces the base Hugo functionality in order to provide additional performance benefits.</p>
 <p>When a provided image is a page resource, it will be optimised using Hugo Pipes and scaled in order to provide images appropriate to different device resolutions. If a static asset or URL to an external image is provided, it will be included as-is without any image processing by Hugo.</p>
 <p>The <code>figure</code> shortcode accepts six parameters:</p>
@@ -1009,9 +1009,9 @@ data: {
   </span>
 
 </p>
-<p>Icons are populated using Hugo pipelines which makes them very flexible. Congo includes a number of built-in icons for social, links and other purposes. Check the <a href="http://localhost:1313/samples/icons/">icon samples</a> page for a full list of supported icons.</p>
+<p>Icons are populated using Hugo pipelines which makes them very flexible. Congo includes a number of built-in icons for social, links and other purposes. Check the <a href="//localhost:1313/samples/icons/">icon samples</a> page for a full list of supported icons.</p>
 <p>Custom icons can be added by providing your own icon assets in the <code>assets/icons/</code> directory of your project. The icon can then be referenced in the shortcode by using the SVG filename without the <code>.svg</code> extension.</p>
-<p>Icons can also be used in partials by calling the <a href="http://localhost:1313/docs/partials/#icon">icon partial</a>.</p>
+<p>Icons can also be used in partials by calling the <a href="//localhost:1313/docs/partials/#icon">icon partial</a>.</p>
 <h2 id="katex" class="relative group">Katex <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#katex" aria-label="Anchor">#</a></span></h2><p>The <code>katex</code> shortcode can be used to add mathematical expressions to article content using the KaTeX package. Refer to the online reference of <a href="https://katex.org/docs/supported.html" target="_blank" rel="noreferrer">supported TeX functions</a> for the available syntax.</p>
 <p>To include mathematical expressions in an article, simply place the shortcode anywhere with the content. It only needs to be included once per article and KaTeX will automatically render any markup on that page. Both inline and block notation are supported.</p>
 <p>Inline notation can be generated by wrapping the expression in <code>\\(</code> and <code>\\)</code> delimiters. Alternatively, block notation can be generated using <code>$$</code> delimiters.</p>
@@ -1021,7 +1021,7 @@ data: {
 </span></span></code></pre></div><p>
 
 \(f(a,b,c) = (a^2+b^2+c^2)^3\)</p>
-<p>Check out the <a href="http://localhost:1313/samples/mathematical-notation/">mathematical notation samples</a> page for more examples.</p>
+<p>Check out the <a href="//localhost:1313/samples/mathematical-notation/">mathematical notation samples</a> page for more examples.</p>
 <h2 id="lead" class="relative group">Lead <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#lead" aria-label="Anchor">#</a></span></h2><p><code>lead</code> is used to bring emphasis to the start of an article. It can be used to style an introduction, or to call out an important piece of information. Simply wrap any Markdown content in the <code>lead</code> shortcode.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">lead</span> <span class="p">&gt;</span>}}
@@ -1048,7 +1048,7 @@ B-->C[Profit]
 
 </div>
 
-<p>You can see some additional Mermaid examples on the <a href="http://localhost:1313/samples/diagrams-flowcharts/">diagrams and flowcharts samples</a> page.</p>
+<p>You can see some additional Mermaid examples on the <a href="//localhost:1313/samples/diagrams-flowcharts/">diagrams and flowcharts samples</a> page.</p>
 <h2 id="profile" class="relative group">Profile <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#profile" aria-label="Anchor">#</a></span></h2><p>The <code>profile</code> shortcode inserts a block displaying the site author&rsquo;s details. The same template is used on Congo&rsquo;s homepage layouts, but can also be inserted in any article content. It has one optional parameter:</p>
 <!-- prettier-ignore-start -->
 <table>
@@ -1066,7 +1066,7 @@ B-->C[Profit]
 </tbody>
 </table>
 <!-- prettier-ignore-end -->
-<p>The template is populated using the author parameters set in the <a href="http://localhost:1313/docs/configuration/#configuration">Language Configuration</a>.</p>
+<p>The template is populated using the author parameters set in the <a href="//localhost:1313/docs/configuration/#configuration">Language Configuration</a>.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">profile</span> <span class="na">align</span><span class="o">=</span><span class="s">&#34;center&#34;</span> <span class="p">&gt;</span>}}
 </span></span></code></pre></div>
@@ -1326,7 +1326,7 @@ B-->C[Profit]
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/"
+  data-url="//localhost:1313/"
 >
   <div
     id="search-modal"

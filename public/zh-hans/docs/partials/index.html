@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/zh-hans/docs/partials/" />
+  <link rel="canonical" href="//localhost:1313/zh-hans/docs/partials/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/zh-hans/docs/partials/">
+  <meta property="og:url" content="//localhost:1313/zh-hans/docs/partials/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="Partials">
   <meta property="og:description" content="Congo 主题中的所有partial。">
@@ -128,7 +128,7 @@
     "description": "Congo 主题中的所有partial。",
     "abstract": "partials用于向主题添加特殊功能，包括分析、评论、网站图标、自定义脚本等等。",
     "inLanguage": "zh-Hans",
-    "url" : "http:\/\/localhost:1313\/zh-hans\/docs\/partials\/",
+    "url" : "\/\/localhost:1313\/zh-hans\/docs\/partials\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -153,13 +153,13 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/zh-hans/",
+       "item": "//localhost:1313/zh-hans/",
        "name": "欢迎使用 Congo! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/zh-hans/docs/",
+       "item": "//localhost:1313/zh-hans/docs/",
        "name": "文档",
        "position": 2
      },
@@ -616,7 +616,7 @@
 </span></span></code></pre></div><h3 id="自定义分析提供商" class="relative group">自定义分析提供商 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%87%aa%e5%ae%9a%e4%b9%89%e5%88%86%e6%9e%90%e6%8f%90%e4%be%9b%e5%95%86" aria-label="锚点">#</a></span></h3><p>如果您希望在您的网站上使用不同的分析提供商，您还可以覆盖分析 partial 并提供自己的脚本。只需在项目中创建文件 <code>layouts/partials/analytics.html</code>，它将自动包含在网站的 <code>&lt;head&gt;</code> 中。</p>
 <h2 id="评论" class="relative group">评论 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%af%84%e8%ae%ba" aria-label="锚点">#</a></span></h2><p>要在文章中添加评论，Congo 包括对评论 partial 的支持，该 partial 包含在每篇文章页面的底部。只需提供一个包含显示您选择的评论所需代码的 <code>layouts/partials/comments.html</code>。</p>
 <p>您可以使用内置的 Hugo Disqus 模板，也可以提供自己的自定义代码。有关详细信息，请参阅 <a href="https://gohugo.io/content-management/comments/" target="_blank" rel="noreferrer">Hugo 文档</a>。</p>
-<p>一旦提供了 partial，就可以使用 <code>showComments</code> 参数来更精细地控制评论的显示位置。该值可以在 <code>params.toml</code> <a href="http://localhost:1313/zh-hans/docs/configuration/#theme-parameters">配置文件</a>中在主题级别设置，也可以通过在 <a href="http://localhost:1313/zh-hans/docs/front-matter/">front matter</a> 中将其包含在每篇文章中。该参数默认为 <code>false</code>，因此必须在这些位置之一将其设置为 <code>true</code>，以便显示评论。</p>
+<p>一旦提供了 partial，就可以使用 <code>showComments</code> 参数来更精细地控制评论的显示位置。该值可以在 <code>params.toml</code> <a href="//localhost:1313/zh-hans/docs/configuration/#theme-parameters">配置文件</a>中在主题级别设置，也可以通过在 <a href="//localhost:1313/zh-hans/docs/front-matter/">front matter</a> 中将其包含在每篇文章中。该参数默认为 <code>false</code>，因此必须在这些位置之一将其设置为 <code>true</code>，以便显示评论。</p>
 <h2 id="网站图标" class="relative group">网站图标 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%bd%91%e7%ab%99%e5%9b%be%e6%a0%87" aria-label="锚点">#</a></span></h2><p>Congo 提供了一组默认的空白网站图标，以便开始使用，但您可以提供自己的资产来覆盖它们。获取新网站图标资产的最简单方法是使用第三方提供商（例如 <a href="https://favicon.io" target="_blank" rel="noreferrer">favicon.io</a>）生成它们。</p>
 <p>图标资产应直接放置在您网站的 <code>static/</code> 文件夹中，并按下面的清单命名。如果您使用 <a href="https://favicon.io" target="_blank" rel="noreferrer">favicon.io</a>，这些将是为您自动生成的文件名，但如果愿意，您也可以提供自己的资产。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">static/
@@ -628,14 +628,14 @@
 </span></span><span class="line"><span class="cl">├─ favicon.ico
 </span></span><span class="line"><span class="cl">└─ site.webmanifest
 </span></span></code></pre></div><p>或者，您还可以完全覆盖默认的网站图标行为，并提供自己的网站图标 HTML 标签和资产。只需在您的项目中提供一个 <code>layouts/partials/favicons.html</code> 文件，它将被注入到站点的 <code>&lt;head&gt;</code> 中，取代默认的资产。</p>
-<h2 id="图标" class="relative group">图标 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%9b%be%e6%a0%87" aria-label="锚点">#</a></span></h2><p>与 <a href="http://localhost:1313/zh-hans/docs/shortcodes/#icon">图标 shortcode</a> 类似，您可以通过使用 Congo 的 <code>icon.html</code> 部分在自己的模板和部分中包含图标。该部分接受一个参数，即要包含的图标的名称。</p>
+<h2 id="图标" class="relative group">图标 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%9b%be%e6%a0%87" aria-label="锚点">#</a></span></h2><p>与 <a href="//localhost:1313/zh-hans/docs/shortcodes/#icon">图标 shortcode</a> 类似，您可以通过使用 Congo 的 <code>icon.html</code> 部分在自己的模板和部分中包含图标。该部分接受一个参数，即要包含的图标的名称。</p>
 <p><strong>例:</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl">  <span class="p">{{</span> <span class="nx">partial</span> <span class="s">&#34;icon.html&#34;</span> <span class="s">&#34;github&#34;</span> <span class="p">}}</span>
-</span></span></code></pre></div><p>图标是使用 Hugo 管道生成的，这使它们非常灵活。Congo 包含了许多内置的图标，用于社交、链接和其他用途。查看 <a href="http://localhost:1313/zh-hans/samples/icons/">图标示例</a> 页面，以获取支持的所有图标的完整列表。</p>
+</span></span></code></pre></div><p>图标是使用 Hugo 管道生成的，这使它们非常灵活。Congo 包含了许多内置的图标，用于社交、链接和其他用途。查看 <a href="//localhost:1313/zh-hans/samples/icons/">图标示例</a> 页面，以获取支持的所有图标的完整列表。</p>
 <p>您可以通过在项目的 <code>assets/icons/</code> 目录中提供自己的图标资产来添加自定义图标。然后，可以通过在没有 <code>.svg</code> 扩展名的情况下使用 SVG 文件名在部分中引用该图标。</p>
-<p>图标还可以通过调用 <a href="http://localhost:1313/zh-hans/docs/shortcodes/#icon">图标 shortcode</a> 在文章内容中使用。</p>
+<p>图标还可以通过调用 <a href="//localhost:1313/zh-hans/docs/shortcodes/#icon">图标 shortcode</a> 在文章内容中使用。</p>
 <h2 id="扩展" class="relative group">扩展 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%89%a9%e5%b1%95" aria-label="锚点">#</a></span></h2><p>Congo 还提供了许多扩展部分，允许扩展基本功能。</p>
-<h3 id="文章链接" class="relative group">文章链接 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%96%87%e7%ab%a0%e9%93%be%e6%8e%a5" aria-label="锚点">#</a></span></h3><p>如果希望在文章链接后插入其他代码，请创建一个 <code>layouts/partials/extend-article-link.html</code> 文件。当与 <a href="http://localhost:1313/zh-hans/docs/shortcodes/#badge"><code>badge</code></a> shortcode 结合使用时，这特别强大，可以用于突出显示某些文章的元数据。</p>
+<h3 id="文章链接" class="relative group">文章链接 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%96%87%e7%ab%a0%e9%93%be%e6%8e%a5" aria-label="锚点">#</a></span></h3><p>如果希望在文章链接后插入其他代码，请创建一个 <code>layouts/partials/extend-article-link.html</code> 文件。当与 <a href="//localhost:1313/zh-hans/docs/shortcodes/#badge"><code>badge</code></a> shortcode 结合使用时，这特别强大，可以用于突出显示某些文章的元数据。</p>
 <h3 id="头部和页脚" class="relative group">头部和页脚 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%a4%b4%e9%83%a8%e5%92%8c%e9%a1%b5%e8%84%9a" aria-label="锚点">#</a></span></h3><p>该主题允许直接将额外的代码插入到模板的 <code>&lt;head&gt;</code> 和 <code>&lt;footer&gt;</code> 部分。这对于提供不是主题一部分的脚本或其他逻辑非常有用。</p>
 <p>只需创建 <code>layouts/partials/extend-head.html</code> 或 <code>layouts/partials/extend-footer.html</code>，它们将自动包含在您的网站构建中。这两个部分都被注入为 <code>&lt;head&gt;</code> 和 <code>&lt;footer&gt;</code> 中的最后一项，因此它们可以用于覆盖主题默认值。</p>
 
@@ -777,7 +777,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/zh-hans/"
+  data-url="//localhost:1313/zh-hans/"
 >
   <div
     id="search-modal"

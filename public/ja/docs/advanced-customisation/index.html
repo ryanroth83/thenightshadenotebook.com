@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/ja/docs/advanced-customisation/" />
+  <link rel="canonical" href="//localhost:1313/ja/docs/advanced-customisation/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/ja/docs/advanced-customisation/">
+  <meta property="og:url" content="//localhost:1313/ja/docs/advanced-customisation/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="高度なカスタマイズ">
   <meta property="og:description" content="Congoを手動で構築する方法">
@@ -125,7 +125,7 @@
     "description": "Congoを手動で構築する方法",
     "abstract": "Congoは、基本的なTailwind設定の変更、手動でのテーマ構築、カスタムCSSの提供など、高度なカスタマイズをサポートしています。",
     "inLanguage": "ja",
-    "url" : "http:\/\/localhost:1313\/ja\/docs\/advanced-customisation\/",
+    "url" : "\/\/localhost:1313\/ja\/docs\/advanced-customisation\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -150,13 +150,13 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/",
+       "item": "//localhost:1313/ja/",
        "name": "Congoへようこそ! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/docs/",
+       "item": "//localhost:1313/ja/docs/",
        "name": "ドキュメント",
        "position": 2
      },
@@ -603,7 +603,7 @@
 <p>テーマの動作を調整する正しい方法は、Hugoの強力な<a href="https://gohugo.io/templates/lookup-order/" target="_blank" rel="noreferrer">file lookup order</a>を使ってファイルを上書きすることです。そうすることで、あなたがプロジェクトディレクトリにインクルードしたファイルが自動的にテーマファイルよりも優先されることを保証します。</p>
 <p>例えば、Congoのメイン記事テンプレートをオーバーライドしたい場合、独自の <code>layouts/_default/single.html</code> ファイルを作成し、プロジェクトのルートに置くだけです。このファイルはテーマを変更することなく、テーマの <code>single.html</code> を上書きします。これは、HTMLテンプレート、パーシャル、ショートコード、設定ファイル、データ、アセットなど、どんなテーマファイルにも使えます。</p>
 <p>このシンプルな慣習に従う限り、あなたのカスタマイズを失うことなく、常にテーマをアップデート（または異なるテーマのバージョンをテスト）することができます。</p>
-<h2 id="カラースキーム" class="relative group">カラースキーム <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e3%82%ab%e3%83%a9%e3%83%bc%e3%82%b9%e3%82%ad%e3%83%bc%e3%83%a0" aria-label="アンカー">#</a></span></h2><p>Congoにはいくつかのカラースキームが同梱されています。配色を変更するには、 <code>colorScheme</code> テーマパラメーターを設定します。組み込みの配色について詳しくは<a href="http://localhost:1313/ja/docs/getting-started/">はじめに</a>セクションを参照してください。</p>
+<h2 id="カラースキーム" class="relative group">カラースキーム <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e3%82%ab%e3%83%a9%e3%83%bc%e3%82%b9%e3%82%ad%e3%83%bc%e3%83%a0" aria-label="アンカー">#</a></span></h2><p>Congoにはいくつかのカラースキームが同梱されています。配色を変更するには、 <code>colorScheme</code> テーマパラメーターを設定します。組み込みの配色について詳しくは<a href="//localhost:1313/ja/docs/getting-started/">はじめに</a>セクションを参照してください。</p>
 <p>デフォルトの配色に加えて、独自のスキームを作成し、ウェブサイト全体を好みのスタイルに変更することもできます。スキームは <code>assets/css/schemes/</code> ディレクトリに <code>&lt;scheme-name&gt;.css</code> ファイルを置くことで作成できます。ファイルを作成したら、テーマ設定の中でその名前を参照するだけです。</p>
 <p>Congoは3色のパレットを定義してテーマ全体に使用しています。この3色は「ニュートラル」、「プライマリー」、「セカンダリー」として定義され、それぞれ10色の濃淡があります。</p>
 <p>Tailwind CSS 3.0が不透明度を用いてカラー値を計算するため、使用するカラーは<a href="https://github.com/adamwathan/tailwind-css-variable-text-opacity-demo" target="_blank" rel="noreferrer">特定のフォーマットに準拠</a>して指定するする必要があります。</p>
@@ -645,7 +645,7 @@
 </span></span><span class="line"><span class="cl">  <span class="c1">// and more...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
 </span></span></code></pre></div><p>デフォルトでは、特定のプロジェクト構造に従っていれば、修正することなく簡単に独自のCSSファイルを生成できるようにコンテンツパスが設定されています。つまり、<strong>Congo を <code>themes/congo/</code> のサブディレクトリとしてプロジェクトに含める必要があります。</strong>
-よって、Hugoモジュールを使って簡単にテーマをインストールすることはできず、 Gitサブモジュール（推奨）か手動インストールのどちらかの方法を取らなければなりません。<a href="http://localhost:1313/ja/docs/installation/">インストール</a>では、これらの方法のいずれかを使ってテーマをインストールする方法を説明しています。</p>
+よって、Hugoモジュールを使って簡単にテーマをインストールすることはできず、 Gitサブモジュール（推奨）か手動インストールのどちらかの方法を取らなければなりません。<a href="//localhost:1313/ja/docs/installation/">インストール</a>では、これらの方法のいずれかを使ってテーマをインストールする方法を説明しています。</p>
 <h3 id="プロジェクトの構造" class="relative group">プロジェクトの構造 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e3%81%ae%e6%a7%8b%e9%80%a0" aria-label="アンカー">#</a></span></h3><p>デフォルト設定の恩恵を授かるには、プロジェクトは下記のような構造になっているべきです。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">.
 </span></span><span class="line"><span class="cl">├── assets
@@ -834,7 +834,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/ja/"
+  data-url="//localhost:1313/ja/"
 >
   <div
     id="search-modal"

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Example on Congo</title>
-    <link>http://localhost:1313/ja/tags/example/</link>
+    <link>//localhost:1313/ja/tags/example/</link>
     <description>Recent content in Example on Congo</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2024 Congo contributors</copyright>
     <lastBuildDate>Sun, 09 Aug 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/ja/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/ja/tags/example/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>コンテンツの例</title>
-      <link>http://localhost:1313/ja/docs/content-examples/</link>
+      <link>//localhost:1313/ja/docs/content-examples/</link>
       <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ja/docs/content-examples/</guid>
+      <guid>//localhost:1313/ja/docs/content-examples/</guid>
       <description>コンテンツがどのように構成されるべきかを示すいくつかの例です。</description>
     </item>
   </channel>

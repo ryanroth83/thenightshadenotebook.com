@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/ja/docs/shortcodes/" />
+  <link rel="canonical" href="//localhost:1313/ja/docs/shortcodes/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/ja/docs/shortcodes/">
+  <meta property="og:url" content="//localhost:1313/ja/docs/shortcodes/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="ショートコード">
   <meta property="og:description" content="Congoで利用できるすべてのショートコードについて">
@@ -127,7 +127,7 @@
     "description": "Congoで利用できるすべてのショートコードについて",
     "abstract": "Congoには、画像、図表、ボタンなどのリッチコンテンツを記事に追加するショートコードが含まれています。",
     "inLanguage": "ja",
-    "url" : "http:\/\/localhost:1313\/ja\/docs\/shortcodes\/",
+    "url" : "\/\/localhost:1313\/ja\/docs\/shortcodes\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -152,13 +152,13 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/",
+       "item": "//localhost:1313/ja/",
        "name": "Congoへようこそ! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/docs/",
+       "item": "//localhost:1313/ja/docs/",
        "name": "ドキュメント",
        "position": 2
      },
@@ -852,10 +852,10 @@ Click!
 </span></span></code></pre></div><!-- prettier-ignore-start -->
 <div class="chart">
   
-  <canvas id="978623145"></canvas>
+  <canvas id="349125867"></canvas>
   <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", (event) => {
-      const ctx = document.getElementById("978623145");
+      const ctx = document.getElementById("349125867");
       const chart = new Chart(ctx, {
         
 type: 'bar',
@@ -873,7 +873,7 @@ data: {
 </div>
 
 <!-- prettier-ignore-end -->
-<p><a href="http://localhost:1313/ja/samples/charts/">サンプル - チャート</a>で、他のサンプルを見るこができます。</p>
+<p><a href="//localhost:1313/ja/samples/charts/">サンプル - チャート</a>で、他のサンプルを見るこができます。</p>
 <h2 id="図" class="relative group">図 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%9b%b3" aria-label="アンカー">#</a></span></h2><p>Congoには、コンテンツに画像を追加するための <code>figure</code> ショートコードが含まれています。このショートコードは、Hugoの基本機能を置き換えることで、さらなるパフォーマンス上の利点を提供します。</p>
 <p>提供された画像がページリソースである場合、Hugo Pipesを使用して最適化され、さまざまなデバイスの解像度に適した画像が提供されるように拡大縮小されます。静的アセットや外部画像へのURLが提供された場合は、Hugoによる画像処理は行われず、そのまま含まれます。</p>
 <p><code>figure</code> は6つのパラメーターを受け入れます:</p>
@@ -1008,9 +1008,9 @@ data: {
   </span>
 
 </p>
-<p>アイコンはHugo Pipesを使って配置されるため、非常に柔軟性があります。Congoには、ソーシャル、リンク、その他の目的のために多くのビルトインアイコンが含まれています。サポートされているアイコンの完全なリストは、<a href="http://localhost:1313/ja/samples/icons/">サンプル - アイコン</a>ページをチェックしてください。</p>
+<p>アイコンはHugo Pipesを使って配置されるため、非常に柔軟性があります。Congoには、ソーシャル、リンク、その他の目的のために多くのビルトインアイコンが含まれています。サポートされているアイコンの完全なリストは、<a href="//localhost:1313/ja/samples/icons/">サンプル - アイコン</a>ページをチェックしてください。</p>
 <p>カスタムアイコンは、プロジェクトの <code>assets/icons/</code> ディレクトリに独自のアイコンアセットを提供することで追加できます。アイコンは拡張子 <code>.svg</code> を除いたSVGファイル名でショートコードから参照できます。</p>
-<p>アイコンは<a href="http://localhost:1313/ja/docs/partials/#アイコン">パーシャル - アイコン</a>を呼び出すことでパーシャルでも使用できます。</p>
+<p>アイコンは<a href="//localhost:1313/ja/docs/partials/#アイコン">パーシャル - アイコン</a>を呼び出すことでパーシャルでも使用できます。</p>
 <h2 id="katex" class="relative group">Katex <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#katex" aria-label="アンカー">#</a></span></h2><p><code>katex</code> を使うと、KaTeXパッケージを使って記事の内容に数式を追加することができます。利用可能な構文については<a href="https://katex.org/docs/supported.html" target="_blank" rel="noreferrer">supported TeX functions</a>のオンラインリファレンスを参照してください。</p>
 <p>記事中に数式を含めるには、コンテンツ内の任意の場所にショートコードを配置するだけです。記事ごとに一度記述するだけで、KaTeXが自動的にそのページのマークアップをレンダリングします。インライン表記とブロック表記の両方がサポートされています。</p>
 <p>インライン記法は、式を区切り記号 <code>\\(</code> と <code>\\)</code> で囲むことで生成できます。ブロック記法の場合は <code>$$</code> です。</p>
@@ -1020,7 +1020,7 @@ data: {
 </span></span></code></pre></div><p>
 
 \(f(a,b,c) = (a^2+b^2+c^2)^3\)</p>
-<p><a href="http://localhost:1313/ja/samples/mathematical-notation/">数学的表記のサンプル</a>でより多くの例をチェックしてください。</p>
+<p><a href="//localhost:1313/ja/samples/mathematical-notation/">数学的表記のサンプル</a>でより多くの例をチェックしてください。</p>
 <h2 id="リード" class="relative group">リード <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e3%83%aa%e3%83%bc%e3%83%89" aria-label="アンカー">#</a></span></h2><p><code>lead</code> は記事の冒頭を強調するために使われます。導入部のスタイルや、重要な情報を呼び出すために使用することができます。Markdownのコンテンツを <code>lead</code> で囲むだけです。</p>
 <p><strong>例:</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">lead</span> <span class="p">&gt;</span>}}
@@ -1047,7 +1047,7 @@ B-->C[利益]
 
 </div>
 
-<p><a href="http://localhost:1313/ja/samples/diagrams-flowcharts/">ダイアグラムとフローチャートのサンプル</a>で、他の例を見ることができます。</p>
+<p><a href="//localhost:1313/ja/samples/diagrams-flowcharts/">ダイアグラムとフローチャートのサンプル</a>で、他の例を見ることができます。</p>
 
       </div>
     </section>
@@ -1187,7 +1187,7 @@ B-->C[利益]
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/ja/"
+  data-url="//localhost:1313/ja/"
 >
   <div
     id="search-modal"

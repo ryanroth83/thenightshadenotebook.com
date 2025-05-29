@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/zh-hans/docs/version-2/upgrade/" />
+  <link rel="canonical" href="//localhost:1313/zh-hans/docs/version-2/upgrade/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/zh-hans/docs/version-2/upgrade/">
+  <meta property="og:url" content="//localhost:1313/zh-hans/docs/version-2/upgrade/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="从Congo 1.x升级">
   <meta property="og:description" content="探索2.0的新特性">
@@ -124,7 +124,7 @@
     "description": "探索2.0的新特性",
     "abstract": "尽管 Congo 2.",
     "inLanguage": "zh-Hans",
-    "url" : "http:\/\/localhost:1313\/zh-hans\/docs\/version-2\/upgrade\/",
+    "url" : "\/\/localhost:1313\/zh-hans\/docs\/version-2\/upgrade\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -150,19 +150,19 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/zh-hans/",
+       "item": "//localhost:1313/zh-hans/",
        "name": "欢迎使用 Congo! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/zh-hans/docs/",
+       "item": "//localhost:1313/zh-hans/docs/",
        "name": "文档",
        "position": 2
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/zh-hans/docs/version-2/",
+       "item": "//localhost:1313/zh-hans/docs/version-2/",
        "name": "2.0版本新特性",
        "position": 3
      },
@@ -831,16 +831,16 @@
 </tr>
 </tbody>
 </table>
-<p>有关支持的所有参数的完整列表，请参阅<a href="http://localhost:1313/zh-hans/docs/configuration/">配置</a>文档。</p>
+<p>有关支持的所有参数的完整列表，请参阅<a href="//localhost:1313/zh-hans/docs/configuration/">配置</a>文档。</p>
 <h2 id="步骤4移动assets" class="relative group">步骤4：移动assets <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%ad%a5%e9%aa%a44%e7%a7%bb%e5%8a%a8assets" aria-label="锚点">#</a></span></h2><p>除了favicon之外，现在所有站点assets都使用Hugo Pipes构建项目的优化版本。为了使主题能够定位你的文件，任何先前的静态主题assets需要移动到Hugo资产文件夹。主要是作者图片和站点标志：</p>
 <p><code>static/me.jpg</code> <strong>→</strong> <code>assets/me.jpg</code><br>
 <code>static/logo.jpg</code> <strong>→</strong> <code>assets/logo.jpg</code></p>
 <p>如果你提供了作者图片或站点标志，只需将这些资产从 <code>static/</code> 移动到 <code>assets/</code>。如果使用相同的目录结构，主题将自动知道在哪里找到这些文件。如果想提供新的路径，相应地更新 <code>logo</code> 和 <code>author.image</code> 配置值。</p>
 <p>请注意，此步骤不适用于项目中实际上是静态的任何assets。例如，直接从文章中链接的PDF文件是静态资产。这些文件应保留在 <code>static/</code> 目录中，以确保在Hugo构建站点时将它们复制到输出文件夹中。</p>
 <h2 id="步骤5检查内容" class="relative group">步骤5：检查内容 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%ad%a5%e9%aa%a45%e6%a3%80%e6%9f%a5%e5%86%85%e5%ae%b9" aria-label="锚点">#</a></span></h2><p>版本2中 <code>figure</code> 短代码 的行为不同。如果在内容中使用 <code>figure</code> 并且有高级用例，可能需要调整提供的参数。</p>
-<p>查阅<a href="http://localhost:1313/zh-hans/docs/shortcodes/#figure">短代码文档</a>以了解有关支持的参数的更多信息。</p>
+<p>查阅<a href="//localhost:1313/zh-hans/docs/shortcodes/#figure">短代码文档</a>以了解有关支持的参数的更多信息。</p>
 <h2 id="步骤6重新构建" class="relative group">步骤6：重新构建 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%ad%a5%e9%aa%a46%e9%87%8d%e6%96%b0%e6%9e%84%e5%bb%ba" aria-label="锚点">#</a></span></h2><p>现在所有配置更改都已完成，是时候重新构建站点了。运行 <code>hugo</code> 或你的构建命令，并检查一切是否按预期工作。</p>
-<p>如果遇到任何错误，请检查配置是否正确，并参考<a href="http://localhost:1313/zh-hans/docs/">完整文档</a>获取进一步的指导。记住，主题捆绑的示例配置文件包含所有默认参数，并且是一个很好的起点。</p>
+<p>如果遇到任何错误，请检查配置是否正确，并参考<a href="//localhost:1313/zh-hans/docs/">完整文档</a>获取进一步的指导。记住，主题捆绑的示例配置文件包含所有默认参数，并且是一个很好的起点。</p>
 <p>🙋‍♀️ 如果仍然需要帮助，请随时在<a href="https://github.com/jpanther/congo/discussions" target="_blank" rel="noreferrer">GitHub Discussions</a>上提问。</p>
 
       </div>
@@ -929,7 +929,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/zh-hans/"
+  data-url="//localhost:1313/zh-hans/"
 >
   <div
     id="search-modal"

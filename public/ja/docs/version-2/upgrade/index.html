@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/ja/docs/version-2/upgrade/" />
+  <link rel="canonical" href="//localhost:1313/ja/docs/version-2/upgrade/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/ja/docs/version-2/upgrade/">
+  <meta property="og:url" content="//localhost:1313/ja/docs/version-2/upgrade/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="Congo 1.xからのアップグレード">
   <meta property="og:description" content="Congo 1.xからのアップグレード">
@@ -124,7 +124,7 @@
     "description": "Congo 1.xからのアップグレード",
     "abstract": "Congo 2.",
     "inLanguage": "ja",
-    "url" : "http:\/\/localhost:1313\/ja\/docs\/version-2\/upgrade\/",
+    "url" : "\/\/localhost:1313\/ja\/docs\/version-2\/upgrade\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -150,19 +150,19 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/",
+       "item": "//localhost:1313/ja/",
        "name": "Congoへようこそ! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/docs/",
+       "item": "//localhost:1313/ja/docs/",
        "name": "ドキュメント",
        "position": 2
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ja/docs/version-2/",
+       "item": "//localhost:1313/ja/docs/version-2/",
        "name": "What's New in 2.0",
        "position": 3
      },
@@ -809,16 +809,16 @@
 </tr>
 </tbody>
 </table>
-<p>サポートされるすべてのパラメーターについては<a href="http://localhost:1313/ja/docs/configuration/">設定</a>を参照ください。</p>
+<p>サポートされるすべてのパラメーターについては<a href="//localhost:1313/ja/docs/configuration/">設定</a>を参照ください。</p>
 <h2 id="step-4-assetsの移動" class="relative group">Step 4: assetsの移動 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#step-4-assets%e3%81%ae%e7%a7%bb%e5%8b%95" aria-label="アンカー">#</a></span></h2><p>ファビコンを除くすべてのassetsが、Hugo Pipesにて最適化されるようになりました。テーマがあなたのファイルを見つけるためには、以前の <code>static/</code> から <code>assets/</code> ディレクトリに移動する必要があります。主に、著者画像とサイトロゴです:</p>
 <p><code>static/me.jpg</code> <strong>→</strong> <code>assets/me.jpg</code>
 <code>static/logo.jpg</code> <strong>→</strong> <code>assets/logo.jpg</code></p>
 <p>著者画像やサイトロゴを提供した場合は、これらのアセットを <code>static/</code> から <code>assets/</code> に移動するだけです。同じディレクトリ構造を使用している場合、テーマはこれらのファイルがどこにあるかを自動的に認識します。新しいパスを指定したい場合は、 <code>logo</code> と <code>author.image</code> の設定値を適宜更新してください。</p>
 <p>このステップは、プロジェクト内の静的なassetsには適用されないことに注意してください。例えば、記事内から直接リンクしているPDFファイルは静的なassetsです。これらのファイルは、Hugoがサイトを構築するときに出力ディレクトリに確実にコピーされるよう、<code>static/</code> ディレクトリに残しておく必要があります。</p>
 <h2 id="step-5-コンテンツの確認" class="relative group">Step 5: コンテンツの確認 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#step-5-%e3%82%b3%e3%83%b3%e3%83%86%e3%83%b3%e3%83%84%e3%81%ae%e7%a2%ba%e8%aa%8d" aria-label="アンカー">#</a></span></h2><p>Congo 2.0では <code>figure</code> ショートコードの振る舞いが変わります。記事内で <code>figure</code> を使用している場合、パラメーターを調整する必要があるかもしれません。</p>
-<p>サポートされているパラメーターについては、<a href="http://localhost:1313/ja/docs/shortcodes/#figure">shortcode</a>を参照してください。</p>
+<p>サポートされているパラメーターについては、<a href="//localhost:1313/ja/docs/shortcodes/#figure">shortcode</a>を参照してください。</p>
 <h2 id="step-6-再構築" class="relative group">Step 6: 再構築 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#step-6-%e5%86%8d%e6%a7%8b%e7%af%89" aria-label="アンカー">#</a></span></h2><p>これですべての設定変更が完了したので、いよいよサイトを再構築します。 <code>hugo</code> またはあなたのビルドコマンドを実行し、すべてが期待通りに動作することを確認してください。</p>
-<p>エラーに遭遇した場合は、設定が正しいことを確認し、<a href="http://localhost:1313/ja/docs/">ドキュメント</a>を参照してください。テーマに同梱されている設定ファイルの例には、デフォルトのパラメーターがすべて含まれており、出発点として最適です。</p>
+<p>エラーに遭遇した場合は、設定が正しいことを確認し、<a href="//localhost:1313/ja/docs/">ドキュメント</a>を参照してください。テーマに同梱されている設定ファイルの例には、デフォルトのパラメーターがすべて含まれており、出発点として最適です。</p>
 <p>🙋‍♀️ それでもまだ助けが必要な場合は、<a href="https://github.com/jpanther/congo/discussions" target="_blank" rel="noreferrer">GitHub Discussions</a>で遠慮なく質問してください。</p>
 
       </div>
@@ -907,7 +907,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/ja/"
+  data-url="//localhost:1313/ja/"
 >
   <div
     id="search-modal"

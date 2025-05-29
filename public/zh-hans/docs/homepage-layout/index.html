@@ -81,7 +81,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/zh-hans/docs/homepage-layout/" />
+  <link rel="canonical" href="//localhost:1313/zh-hans/docs/homepage-layout/" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -96,7 +96,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/zh-hans/docs/homepage-layout/">
+  <meta property="og:url" content="//localhost:1313/zh-hans/docs/homepage-layout/">
   <meta property="og:site_name" content="Congo">
   <meta property="og:title" content="主页布局">
   <meta property="og:description" content="在 Congo 主题中配置首页布局。">
@@ -125,7 +125,7 @@
     "description": "在 Congo 主题中配置首页布局。",
     "abstract": "Congo 提供了一个完全灵活的首页布局，内置了模板并支持自定义。",
     "inLanguage": "zh-Hans",
-    "url" : "http:\/\/localhost:1313\/zh-hans\/docs\/homepage-layout\/",
+    "url" : "\/\/localhost:1313\/zh-hans\/docs\/homepage-layout\/",
     "author" : {
       "@type": "Person",
       "name": "Congo"
@@ -150,13 +150,13 @@
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/zh-hans/",
+       "item": "//localhost:1313/zh-hans/",
        "name": "欢迎使用 Congo! Tada",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/zh-hans/docs/",
+       "item": "//localhost:1313/zh-hans/docs/",
        "name": "文档",
        "position": 2
      },
@@ -708,14 +708,14 @@
 
 </figure>
 </p>
-<p>作者信息存储在语言配置文件中。有关参数详细信息，请参阅 <a href="http://localhost:1313/zh-hans/docs/getting-started/">入门指南</a> 和 <a href="http://localhost:1313/zh-hans/docs/configuration/##language-and-i18n">语言配置</a> 部分。</p>
+<p>作者信息存储在语言配置文件中。有关参数详细信息，请参阅 <a href="//localhost:1313/zh-hans/docs/getting-started/">入门指南</a> 和 <a href="//localhost:1313/zh-hans/docs/configuration/##language-and-i18n">语言配置</a> 部分。</p>
 <p>此外，提供在主页内容中的任何 Markdown 内容将显示在作者资料下方。这允许额外的灵活性，以使用 Shortcodes 显示生物或其他自定义内容。</p>
 <p>要启用profile布局，请在 <code>params.toml</code> 配置文件中设置 <code>homepage.layout = &quot;profile&quot;</code>。</p>
 <h2 id="custom布局" class="relative group">custom布局 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#custom%e5%b8%83%e5%b1%80" aria-label="锚点">#</a></span></h2><p>如果内置的首页布局不满足您的需求，您可以选择提供自己的自定义布局。这允许您完全掌控页面内容，基本上为您提供了一个空白的画布。</p>
 <p>要启用自定义布局，请在 <code>params.toml</code> 配置文件中设置 <code>homepage.layout = &quot;custom&quot;</code>。</p>
 <p>配置值设置后，创建一个新的 <code>custom.html</code> 文件并将其放置在 <code>layouts/partials/home/custom.html</code>。现在，<code>custom.html</code> 文件中的任何内容都将放置在站点首页的内容区域。您可以使用任何 HTML、Tailwind 或 Hugo 模板函数来定义布局。</p>
 <p>要在自定义布局中包含<a href="#recent-articles">最近的文章</a>，请使用 <code>recent-articles.html</code> 部分。</p>
-<p>例如，这个站点的<a href="http://localhost:1313/zh-hans/">首页</a>使用自定义布局，允许在profile和page布局之间切换。访问 <a href="https://github.com/jpanther/congo/blob/dev/exampleSite/layouts/partials/home/custom.html" target="_blank" rel="noreferrer">GitHub 仓库</a> 查看它是如何工作的。</p>
+<p>例如，这个站点的<a href="//localhost:1313/zh-hans/">首页</a>使用自定义布局，允许在profile和page布局之间切换。访问 <a href="https://github.com/jpanther/congo/blob/dev/exampleSite/layouts/partials/home/custom.html" target="_blank" rel="noreferrer">GitHub 仓库</a> 查看它是如何工作的。</p>
 <h2 id="最近的文章" class="relative group">最近的文章 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%9c%80%e8%bf%91%e7%9a%84%e6%96%87%e7%ab%a0" aria-label="锚点">#</a></span></h2><p>所有首页布局都可以选择在主页面内容下方显示最近的文章。要启用此功能，只需在 <code>params.toml</code> 配置文件中将 <code>homepage.showRecent</code> 设置为 <code>true</code>。</p>
 <p>
 
@@ -921,7 +921,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/zh-hans/"
+  data-url="//localhost:1313/zh-hans/"
 >
   <div
     id="search-modal"
